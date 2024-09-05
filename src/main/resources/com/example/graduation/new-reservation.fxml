@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #4f0184;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.graduation.NewReservation">
+    <children>
+        <Label fx:id="label_welcome" layoutX="303.0" layoutY="3.0" prefHeight="22.0" prefWidth="283.0" text="                     WELCOME!" textFill="WHITE">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="label_hotel" layoutX="61.0" layoutY="-4.0" prefHeight="33.0" prefWidth="232.0" text="HOTEL MANAGEMENT SYSTEM" textFill="WHITE">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="15.0" />
+            </font>
+        </Label>
+        <ImageView fx:id="img_logo" fitHeight="22.0" fitWidth="57.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@logo.png" />
+            </image>
+        </ImageView>
+        <Button fx:id="button_logout" layoutX="527.0" layoutY="359.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="77.0" style="-fx-background-color: #ffffff; -fx-cursor: hand;" text="Logout" textFill="#4f0184">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="14.0" />
+            </font></Button>
+        <AnchorPane layoutX="3.0" layoutY="25.0" prefHeight="47.0" prefWidth="600.0">
+            <children>
+                <Button fx:id="button_rooms" layoutY="2.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="112.0" style="-fx-cursor: hand;" text="Rooms" textFill="#4f0184">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="12.0" />
+                    </font></Button>
+                <Button fx:id="button_features" layoutX="112.0" layoutY="2.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="118.0" style="-fx-cursor: hand;" text="Features" textFill="#4f0184">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="12.0" />
+                    </font></Button>
+                <Button fx:id="button_service" layoutX="356.0" layoutY="2.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="118.0" style="-fx-cursor: hand;" text="Service" textFill="#4f0184">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="12.0" />
+                    </font></Button>
+                <Button fx:id="button_customer" layoutX="230.0" layoutY="2.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" style="-fx-cursor: hand;" text="Customer" textFill="#4f0184">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="12.0" />
+                    </font></Button>
+                <Button fx:id="button_reservationservices" layoutX="474.0" layoutY="2.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="141.0" style="-fx-cursor: hand;" text="Reservation Services" textFill="#4f0184">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="12.0" />
+                    </font>
+                </Button>
+            </children></AnchorPane>
+        <AnchorPane layoutX="14.0" layoutY="60.0" prefHeight="292.0" prefWidth="616.0">
+            <children>
+                <Label layoutX="153.0" layoutY="113.0" text="Chek-In Date" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="12.0" />
+                    </font>
+                </Label>
+                <Label layoutX="136.0" layoutY="154.0" text="Check-Out Date" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="12.0" />
+                    </font>
+                </Label>
+                <Button fx:id="button_nrsave" layoutX="417.0" layoutY="254.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="76.0" text="Save" />
+                <Label layoutX="173.0" layoutY="72.0" text="Room ID" textFill="WHITE" />
+                <Label layoutX="153.0" layoutY="214.0" textFill="WHITE" />
+            <DatePicker fx:id="dp_nrcheckındate" layoutX="234.0" layoutY="107.0" prefHeight="27.0" prefWidth="174.0" />
+            <DatePicker fx:id="dp_nrcheckoutdate" layoutX="234.0" layoutY="149.0" prefHeight="25.0" prefWidth="174.0" />
+            <SplitMenuButton fx:id="smb_nrroom" layoutX="234.0" layoutY="67.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="174.0" text="Room">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+            </SplitMenuButton>
+            <SplitMenuButton fx:id="smb_nrcustomer" layoutX="234.0" layoutY="30.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="174.0" text="Customer">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+            </SplitMenuButton>
+            <Label layoutX="171.0" layoutY="34.0" prefWidth="64.0" text="Customer" textFill="#fcfcfc" />
+            </children></AnchorPane>
+        <Button fx:id="button_main" layoutX="424.0" layoutY="360.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="77.0" text="MAIN" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.graduation.SignIn">
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="707.0" style="-fx-background-color: #4f0184;">
+         <children>
+            <ImageView fx:id="img_logo" fitHeight="150.0" fitWidth="200.0" layoutX="250.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="31.0" fitWidth="74.0" layoutX="216.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@lock.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="31.0" fitWidth="49.0" layoutX="216.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@user.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="tf_user" layoutX="265.0" layoutY="182.0" prefHeight="31.0" prefWidth="170.0" />
+            <Button fx:id="button_login" layoutX="308.0" layoutY="308.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="86.0" style="-fx-cursor: hand; -fx-background-color: #ffffff;" text="Login" textFill="#4f0184">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font>
+            </Button>
+            <Label layoutX="232.0" layoutY="360.0" prefHeight="17.0" prefWidth="79.0" text="Not a user?" textFill="WHITE" />
+            <Button fx:id="button_signup" layoutX="318.0" layoutY="355.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Sign Up" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <PasswordField fx:id="tf_lock" layoutX="266.0" layoutY="250.0" prefHeight="31.0" prefWidth="170.0" />
+         </children></AnchorPane>
+   </children>
+</HBox>
